@@ -1,0 +1,9 @@
+- if you put tagname.classname Its will modify like actual code tag for ex-div.text= <div class = "text"></div>
+
+div.text#text2 = <div class="text" id="text2"></div>
+
+div.text*2 = <div class="text"></div>
+            <div class="text"></div>
+
+
+            
