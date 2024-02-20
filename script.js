@@ -69,9 +69,9 @@ function sleep(ms) {
 
 async function notif() {
     let btn = document.getElementById("btn")
-    await sleep(1000)
-    btn.textContent = "Sent Successfully"
     await sleep(2000)
+    btn.textContent = "Sent Successfully"
+    await sleep(3000)
     btn.textContent = "Send Message"
 }
 
