@@ -682,6 +682,7 @@ section .title::after{
     }
     .home .home-content .text-2{
         font-size: 70px;
+        text-shadow: rgb(220, 216, 199) 1px 0 10px;
     }
     .home .home-content .text-3{
         font-size: 35px;
