@@ -645,13 +645,14 @@ section .title::after{
         height: 250px;
         width: 250px;
     }
-    .home .home-content .right {
-        display: none;
-    }
+    
 }
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
+    }
+    .home .home-content .right {
+        display: none;
     }
 }
 @media (max-width: 800px){
