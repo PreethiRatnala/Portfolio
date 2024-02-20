@@ -59,7 +59,7 @@ html{
 .navbar .menu li a{
     color: azure;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 300;
     margin-left: 35px;
     transition: color 0.3s ease;
 }
@@ -110,12 +110,14 @@ html{
     height: 100vh;
     color: azure;
     min-height: 500px;
+    
+    justify-content:space-between;
     font-family: 'Ubuntu', 'sans-serif';
 }
 .home .max-width{
     margin: auto 0 auto 40px;
-
 }
+
 .home .home-content .left{
     width: calc(50% -30px);
     
@@ -156,13 +158,12 @@ html{
 }  */
 
 .home .right img{
-    height: 450px;
-    width: auto;
+    height: 500px;
+    width: 450px;
     object-fit: cover;
     border-radius: 6px;
-    /*margin-left: 250px;*/
-
-    
+    margin-left: 148px;
+  
 }
 
 .right{
@@ -339,11 +340,27 @@ section .title::after{
     color: crimson;
     font-weight: 600;
 } */
-
+.skills .skills-content .right p{
+    background: crimson;
+    display: inline-block;
+    color: azure;
+    font-size: 15px;
+    padding: 5px 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .right p:hover{
+    background: none;
+    color: crimson;
+    font-weight: 600;
+}
 .skills .skills-content .right .tab-titles{
     display: flex;
     margin:20px 0 40px;
 }
+
 .skills .skills-content .right .tab-links{
     margin-right: 50px;
     font-size: 18px;
@@ -624,37 +641,44 @@ section .title::after{
         padding: 0 50px;
     }
 }
-@media (max-width: 947px){
+@media (max-width: 800px){
     .menu-btn{
         display: block;
         z-index: 999;
     }
     .menu-btn i.active:before{
         content: "\f00d";
+        color: #000;
     }
     .navbar .menu{
         position: fixed;
-        height: 70vh;
-        width: 50%;
+        height:max-content;
+        width: 100%;
         left: 100%;
         top: 0;
-        border-radius: 6px;
-        background: rgb(158, 124, 196);
+        border-color: #000;
+        border-radius: 8px;
+        background: white;
         /* background-color:transparent; */
         text-align: center;
-        padding-top: 80px;
+        padding-top: 50px;
         transition: all 0.3s ease;
-    }
+    } 
     .navbar .menu.active{
-        left: 50%;
+        left: 5%;
+        
     }
     .navbar .menu li{
         display: block;
     }
     .navbar .menu li a{
+        color: rgb(183, 27, 27);
         display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
+        margin: 9px 0;
+        font-size: 19px;
+    }
+    .navbar .menu li a:hover{
+        color: rgb(9, 7, 7);
     }
     .home .home-content .text-2{
         font-size: 70px;
@@ -665,6 +689,9 @@ section .title::after{
     .home .home-content a{
         font-size: 23px;
         padding: 10px 30px;
+    }
+    .home .home-content .right {
+        display: none;
     }
     .max-width{
         max-width: 930px;

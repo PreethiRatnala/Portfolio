@@ -48,10 +48,32 @@ $(document).ready(function(){
                 nav: false
             }
         }
+    });
+    
+    $('#btn').click(function () {
+        // Your existing code to handle the form submission goes here
 
+        // Add a delay before clearing the fields
+        setTimeout(function () {
+            $('.field input, .field textarea').val('');
+        }, 2000);
 
+        // Add the notif function
+        notif();
     });
 });
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function notif() {
+    let btn = document.getElementById("btn")
+    await sleep(1000)
+    btn.textContent = "Sent Successfully"
+    await sleep(2000)
+    btn.textContent = "Send Message"
+}
 
 
 
