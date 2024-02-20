@@ -163,7 +163,7 @@ html{
     object-fit: cover;
     border-radius: 6px;
     margin-left: 148px;
-  
+    box-shadow: 0 0 100px whitesmoke;
 }
 
 .right{
