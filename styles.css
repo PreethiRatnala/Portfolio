@@ -106,7 +106,7 @@ html{
 .home{
     display: flex;
     /* background: url("photos/banner1.jpg") no-repeat center; */
-    background-color: #B1B2FF;
+    background-color: #9a9ade;
     height: 100vh;
     color: azure;
     min-height: 500px;
@@ -157,16 +157,22 @@ html{
 
 .home .right img{
     height: 450px;
-    width: 350px;
+    width: auto;
     object-fit: cover;
     border-radius: 6px;
-    margin-left: 250px;
+    /*margin-left: 250px;*/
+
     
+}
+
+.right{
+    float: left;
+    width: 50%;
 }
 /* Similar content styling applied on sections */
 section{
     padding: 80px 0;
-    background-color: #D2DAFF;
+    background-color: #fff;
 }
 .about, .services, .skills, .works, .contact, .footer{
     font-family: 'Poppins', 'sans-serif';
@@ -208,7 +214,7 @@ section .title::after{
     font-size: 14px;
     color: crimson;
     padding: 5px;
-    background: #D2DAFF ;
+    background: #fff ;
     transform: translateX(-50%);
 }
 
@@ -262,19 +268,19 @@ section .title::after{
     background-color: #B1B2FF;
 }
 .services .title::after{
-    content: "what i provided";
+    content: "What I Know";
     background: #B1B2FF;
 }
 .services .service-content .card{
     width: calc(32% - 25px);
-    background:#867fd4;
+    background:#fff;
     text-align: center;
     border-radius: 10px;
     padding: 20px 25px;
     margin-top: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
-    border: 2px solid #645CAA;
+    border: 2px solid #776ec5;
     
 }
 .services .service-content .card:hover{
@@ -303,7 +309,7 @@ section .title::after{
 /* skills section styling */
 
 .skills .title::after{
-    content: "What i Know";
+    content: "What i Have";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -411,7 +417,7 @@ section .title::after{
     background: #B1B2FF;
 }
 .works .carousel .card{
-    background: #9293de;
+    background: #fff;
     border-radius: 6px;
     padding: 25px 35px;
     margin-top: 50px;
@@ -438,8 +444,8 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 .works .carousel .card img{
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid crimson;
@@ -566,20 +572,44 @@ section .title::after{
     background: none;
 }
 
-/* footer section styling */
+/* Footer Styles */
+.footer { 
+	background-color: #000; 
+	color: #fff; 
+	padding: 2rem; 
+} 
 
-footer{
-    background: #B1B2FF;
-    padding: 20px 23px;
-}
-footer span a{
-    color: crimson;
-    text-decoration: none;
-}
-footer span a:hover{
-    text-decoration: underline;
-}
+.footer-list-items { 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	height: 50px; 
+	width: 50px; 
+	margin: 1rem 1rem 0 1rem; 
+	border-radius: 50%; 
+	background-color: crimson; 
+} 
 
+.footer-links { 
+	font-size: 24px; 
+	color: #fff; 
+	text-decoration: none; 
+} 
+
+.social-links { 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+} 
+
+.footer-menu { 
+	padding: 0 5rem; 
+} 
+
+.footer-menu .footer-menu-list { 
+	display: flex; 
+	list-style: none; 
+} 
 
 /* responsive media query start */
 
@@ -680,6 +710,9 @@ footer span a:hover{
     }
 }
 @media (max-width: 500px) {
+    .home .right img{
+        display:flex;
+    }
     .home .home-content .text-2{
         font-size: 50px;
     }
