@@ -640,7 +640,7 @@ section .title::after{
         
     }
 }
-@media (max-width: 1104px) {
+@media (max-width: 1000px) {
     .about .about-content .left img{
         height: 250px;
         width: 250px;
